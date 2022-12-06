@@ -1,0 +1,52 @@
+//mixin sin parametros
+
+@mixin main{
+color: color-texto;
+font-size: 2rem;
+margin-top: 0.625rem;
+padding: 0.625rem;
+text-align: center;
+}
+
+
+@mixin flex{
+text-align: center;
+display: flex;
+}
+
+@mixin flex2{
+    display: flex;
+    justify-content: center;
+}
+@mixin medidasImg($ancho, $alto, $margin){
+    width: $ancho;
+    height: $alto;
+    margin: $margin;
+}
+
+@mixin boton{
+    color:$color-page;
+font-size: 25px;
+font-weight: bold;
+margin: 10px;
+background-color:#a59565;
+padding: 0.5rem;
+display:inline-block;
+box-shadow: 1px 1px 7px #2e2713;
+text-shadow: 0.8px 0.8px 1px #493d1e;
+ border-radius: 15px; 
+   
+}
+
+@mixin promociones1{
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05);  
+}
+
+@mixin grid{
+    display: grid;
+        grid-template-columns:repeat(3,4fr) ;
+        padding: 20px;
+        gap: 1.2rem;
+}

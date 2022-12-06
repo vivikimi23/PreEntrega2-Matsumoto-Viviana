@@ -1,0 +1,41 @@
+/*main*/
+main{
+    h2{
+        .nuestrosproductos .regalosexclusivos{
+            img{
+          &:hover{
+                @extend %estilosHover;
+                      }
+                    }
+                    }   
+
+    }
+}
+        
+ .ppage3{
+    @extend %estilosTitulo;
+
+}
+
+.servicios{
+font-size: 25px;
+    text-align: center;
+    margin: 30px 30px;
+    padding-top: 50px 50px;
+    color:#940468
+}
+
+
+
+@media screen and (min-width:600px){
+    .nuestrosproductos .regalosexclusivos{
+        @include grid;
+    img{
+        @include medidasImg(18.75rem, 12.5rem,10px);
+       object-fit: cover;
+    }
+    }
+
+        
+    }
+

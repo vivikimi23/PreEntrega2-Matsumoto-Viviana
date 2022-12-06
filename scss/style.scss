@@ -1,0 +1,130 @@
+/*reset*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+@import "contenedores/nuestrosproductos";
+@import "contenedores/promociones";
+@import "contenedores/sobrenosotros";
+@import "contenedores/contacto";
+@import "contenedores/index";
+
+
+/*estilos de header*/
+header{
+    background-color: $color-header;
+    padding: 1.56rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+
+    .container-fluid{
+        padding: 0.03rem;
+
+        }
+        .font{
+            font-family:$estilo-texto;
+            font-size: 1.4rem;
+            font-weight: bold;
+          color:$color-texto;
+        
+        }
+        
+        .nav-color{
+            background-color:$color-header ;
+        
+        }
+        .navbar-brand img{
+            width: 18rem;
+        
+        
+        }  
+      
+        .titulo{
+            color: $color-titulo;
+            font-size: 3.3rem;
+            font-weight: bold; 
+            display:none;
+        }
+            
+            
+            
+      }  
+
+
+
+
+
+
+/*estilos de body*/
+body{
+    background-color:beige;  
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+font-family: $estilo-texto;
+}
+
+
+/* estilos de footer*/
+footer{
+    background-color:$color-header;
+    margin:0; 
+    .footerok{
+        background-color:$color-header;
+        margin:0 auto;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           width: 80vw;
+
+           .footer1{
+            h4{
+                text-align: center;
+                font-size: 1.3rem; 
+                i{
+                    .facebook .instagram{
+                        font-size: 3rem;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+.footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 80%;  
+    }
+}
+.footer3{
+    a{
+    text-decoration: none;}
+    .div{
+    @include flex2;
+    align-items: center;
+    
+h5{
+    padding-left: 0.75rem;
+font-size: 1.3rem;
+}
+}
+}
+  }
+  h6{
+    font-size: 1rem;
+    font-weight: bold; 
+    @include flex2;
+  }  
+}
+

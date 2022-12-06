@@ -1,0 +1,82 @@
+
+/* estilos del main*/
+main{
+    padding: 30px;
+    margin: 0px;
+    @include flex;
+    flex-direction: column;
+    align-items: center;
+    div img{
+       @include medidasImg(18.75rem, 12.5rem,10px)
+        } 
+        h2{
+            @include main;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+      .fotosprincipal{
+        flex-wrap: wrap;
+    justify-content: center;
+        @extend %estilosfotosIndex;
+       img{
+        @extend %estilosfotos2;
+              &:hover{
+                
+  @extend %estilosHover;
+        }
+       } 
+      }
+      .ppage5{
+        @extend %estilosTitulo; 
+    }
+        h3{
+            @include main;
+        }
+.phome{
+    @include boton;
+    &:hover{
+        transform: scale(0.9)
+    }
+}
+.fotostortas{
+    flex-direction: column;
+    justify-content: center;
+    @extend %estilosfotosIndex;
+    img{
+     @extend %estilosfotos2;
+    &:hover{    
+        @extend %estilosHover;
+     }
+    } 
+}
+.fotoportada{
+    display: flex;
+object-fit: cover;
+
+}
+ }
+
+ @media screen and (min-width:600px){
+    header{
+display: flex;
+flex-direction: column;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        }
+.titulo{
+    display: flex;
+}
+
+}
+main{
+    display: block;
+    display: flex;
+
+}
+
+
+
+    
+    

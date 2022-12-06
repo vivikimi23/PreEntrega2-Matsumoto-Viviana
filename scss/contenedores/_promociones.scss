@@ -1,0 +1,30 @@
+main{
+    
+
+.ppage5{
+    @extend %estilospromociones1;
+    font-size: 28px;
+}
+.ppage4{
+    @extend %estilospromociones1;
+    font-size: 28px;
+}
+.promociones .promociones2 .promociones3{
+    img{
+        &:hover{
+                @extend %estilosHover;
+        }
+       } 
+}
+
+}   
+
+@media screen and (min-width:600px){
+    .promociones .promociones2 .promociones3{
+        @include grid;
+    img{
+        @include medidasImg(18.75rem, 12.5rem,10px);
+       object-fit: cover;
+    }
+    }
+}
