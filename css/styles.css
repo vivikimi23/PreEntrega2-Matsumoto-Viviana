@@ -372,9 +372,12 @@ main {
 
 /*estilos de header*/
 header {
+  position: fixed;
+  z-index: 2;
   background-color: #3c3c39;
   align-items: center;
-  display: flex; }
+  display: flex;
+  margin-bottom: 30px; }
   header .font {
     font-family: "Bebas Neue";
     font-size: 1.2rem;
@@ -383,12 +386,11 @@ header {
   header .nav-color {
     background-color: #3c3c39; }
   header .navbar-brand img {
-    width: 10rem; }
+    width: 20%; }
   header .titulo {
     color: #dad8d3;
     font-size: 3.3rem;
-    font-weight: bold;
-    display: none; }
+    font-weight: bold; }
 
 /*estilos de body*/
 body {

@@ -17,9 +17,12 @@
 
 /*estilos de header*/
 header{
+    position:fixed;
+    z-index:2;
     background-color: $color-header;
     align-items: center;
     display: flex;
+    margin-bottom:30px;
 
 
     .container-fluid{
@@ -39,7 +42,7 @@ header{
         
         }
         .navbar-brand img{
-            width: 10rem;
+            width:20%;
         
         
         }  
@@ -48,7 +51,7 @@ header{
             color: $color-titulo;
             font-size: 3.3rem;
             font-weight: bold; 
-            display:none;
+           
         }
             
             
