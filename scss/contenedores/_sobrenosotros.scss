@@ -15,4 +15,37 @@ main{
 object-fit: cover;
 
 }
+
+.acerca{
+    font-size: 50px;
+    margin-top:50px;
+        
+       
+}
+
+
+
+
+
+.phome2{
+
+    color:$color-titulo;
+font-size: 25px;
+margin:0px;
+background-color:$color-fotos;
+padding: 10px;
+ border-radius: 8px; 
+ box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    &:hover{
+        transform: scale(0.9)
+    }
+margin-right:50px;
+margin-top: 30px;
+
+
+}
+
+
+
+
 }

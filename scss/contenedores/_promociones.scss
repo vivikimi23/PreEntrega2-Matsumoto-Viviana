@@ -1,26 +1,29 @@
 main{
     padding:0;
     margin: 0;
-
+    display: flex;
+}
 
     h2{
         @include main;
         text-transform: uppercase;
         text-decoration: underline;
     }
+.prom{
+   
+        font-size: 50px;
+margin-top:50px;
+    
+ 
+     }  
 
 
 
 
 .promociones{
     width: 100%;
-  
     height: 430px;
-   margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-     
+    @extend %estilospromo;
     
     }
  .promo1{
@@ -45,16 +48,16 @@ img{
 .a{
     font-weight: 200;
     text-decoration: none;
-    color:aqua;
+   
    
 }
 
-} 
+
 
 .promo2{
     width: 100%;
   height: 100%;
-   margin: auto;
+   margin:0;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -63,9 +66,9 @@ img{
 .promo2 img{
     width: 300px;
     height: 300px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
-    margin:7px;
+    margin:0;
     overflow: hidden;
     transition: all 0.90s;
     &:hover{
@@ -77,12 +80,7 @@ img{
 }
 
 .promociones3{
-    width:100%;
- height:100%;
-   margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+@extend %estilospromo;
      
     
     }
@@ -100,28 +98,24 @@ img{
 }
 
 .promo3 p{
-    font-weight: 50;
-    padding: 0 5rem;
-    font-size: 20px;
+    font-weight: 50px;
+    padding: 0 8rem;
+    font-size: 30px;
     
 
 }
 
 .promo4{
-    width: 100%;
+    @extend %estilospromo;
   height: 80%;
-   margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
        
 }
 .promo4 img{
     width: 300px;
     height: 300px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    margin:5px;
+    margin:0px;
     overflow: hidden;
     transition: all 0.90s;
     &:hover{
@@ -138,19 +132,59 @@ img{
 }
 .ppage4{
     @extend %estilospromociones1;
-    font-size: 28px;
+    font-size: 35px;
+}
+
+
+.phome3{
+    @include boton;
+    &:hover{
+        transform: scale(0.9)
+    }
+margin-left: 200px;
+width: 60%;
+margin-top: 30px;
 }
 
 
 
-
-
 @media screen and (min-width:600px){
-    .promociones .promociones2 .promociones3{
-        @include grid;
-    img{
-        @include medidasImg(18.75rem, 12.5rem,10px);
-       object-fit: cover;
+display: flex: ;
+.promociones{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 130px;
+    @extend %estilospromo;
+    
     }
-    }
+ .promo1{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 100px;
+
+ }
+img{
+    width: 130px;
+    height: 180px;
+}
+.promo2{
+    width: 60%;
+  height: 50%;
+   margin:0;
+      display: flex;
+    
+    justify-content: center;
+       
+}
+.promo2 img{
+    width: 100px;
+    height: 200px;
+
+
+
+}
+
+
 }

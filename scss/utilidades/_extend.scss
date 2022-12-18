@@ -31,3 +31,29 @@ color:$color-page;
     margin: 20px;
     color: $color-page;  
 }
+
+%estilosproductos{
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.90s;
+    &:hover{
+            @extend %estilosHover;
+            
+    }
+  
+}
+
+%estilospromo{
+    width:100%;
+    height:100%;
+      margin: auto;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+        
+     
+}

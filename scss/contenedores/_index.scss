@@ -3,25 +3,26 @@
 main{
     padding:50px;
     margin: 0;
+    padding-top:45px;
 
         h2{
             @include main;
-            text-transform: uppercase;
-            text-decoration: underline;
+           text-decoration: none;
+            color:$color-titulo;
         }
       .fotosprincipal{
       width: 100%;
      margin: auto;
-        display: flex;
+        @include flex2;
         flex-wrap: wrap;
-        justify-content: center;
+        
         
       
       }
    .fotos{
-    background-color:rgb(245,245,220);
+    background-color:$color-fotos;
     width: 300px;
-   margin: 10px;
+   margin: 20px;
    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         border-radius: 15px;
         overflow: hidden;
@@ -38,7 +39,7 @@ main{
         }
         p{
             padding: 0.3rem 0.1rem;
-            font-size: 20px;
+            font-size: 23px;
             font-weight: 100;
             
             
@@ -47,38 +48,27 @@ main{
        } 
       
    .descuentos{
-   display: flex;
    flex-direction: row;
-   padding: 50px;
-   justify-content: center;
-   
+   padding: 40px;
+   margin:20px;
+   margin-right: 65px;
+  @include flex2;
 
    }
 
    .pago{
-    margin-left: 40px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-        border-radius: 15px;
-        overflow: hidden;
-        background-color: cadetblue;
+    @include descuentos;
    }
 
    .dto{
-    margin-left: 40px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-        border-radius: 15px;
-        overflow: hidden;
+    @include descuentos;
    }
 
    .stock{
-    margin-left: 40px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-        border-radius: 15px;
-        overflow: hidden;
-        justify-content: center;
+    @include descuentos;
+        
    }
-.phome{
-
+    .phome{
     @include boton;
     &:hover{
         transform: scale(0.9)
@@ -92,29 +82,25 @@ main{
 .fotoportada{
     
     display: flex;
-    width: 100%;
-    min-height: 50vh;
-    background-image:url(../img/13.jpeg);
+    width: 100vw;
+    min-height: 90vh;
+ background-image:url(../img/alfajores4.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.fotoportada img{
-width: 100%;
-
-
+   margin: 15px;
 }
 
 
 
+.ppage5{
+    font-size: 40px;
+   
+}
 
 
-
-
-
- @media screen and (min-width:600px){
+@media screen and (min-width:600px){
     header{
 display: flex;
 flex-direction: column;
@@ -128,10 +114,6 @@ flex-direction: column;
 }
 
 }
-
-
-
-
 
     
     
